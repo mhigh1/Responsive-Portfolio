@@ -85,7 +85,7 @@ nav a:nth-child(even) {
 
 nav a:last-child {
     border-right: none;
-    padding-right: 0px;
+    padding-right: 15px;
 }
 
 .content-wrapper {
@@ -249,4 +249,35 @@ input[type=submit]:hover, input[type=submit]:focus {
 input[type=submit]:active {
     background-color: #f8f8f8;
     color: #4aaaa5;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    .titleBar, #content-container, footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titleBar, #content-container, footer {
+        width: 100%;
+    }
+
+    .activity-group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        min-width: 540px;
+    }
+
+    .titleBar, #content-container, footer {
+        width: 100%;
+    }
+
+    .activity-group {
+        width: 100%;
+    }
 }
