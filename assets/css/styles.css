@@ -290,7 +290,7 @@ input[type=submit]:active {
 
 @media screen and (max-width: 640px) {
     body {
-        min-width: 540px;
+        min-width: 320px;
     }
 
     .titleBar, #content-container, footer {
@@ -313,18 +313,39 @@ input[type=submit]:active {
         line-height: normal;
     }
 
-    /* Portfolio */
-    .activity-group {
-        width: 100%;
+    /* Profile */
+    .content {
         text-align: center;
     }
 
+    .profileImage {
+        float: unset;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .profile p {
+        text-align: justify;
+    }
+
+    /* Portfolio */
+    .activity-group {
+        width: 100%;
+    }
+
     .activity-group ul {
-        width: 420px;
+        width: 100%;
     }
 
     .activity-group ul li {
         margin: 0px 10px 10px 0px;
+        text-align: center;
+        display: inline-block;
+        float: none;
+    }
+
+    /* Contact Form */
+    form[name=frmContact] label {
+        text-align: left;
     }
 
 }
